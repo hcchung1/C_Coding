@@ -6,6 +6,7 @@ void count_distinct_strings(char* s) {
     // Find the number of different substrings of s, by deleting the first or the second character of s.
     int count = 0;
     char* t= (char*)malloc(strlen(s));
+    // copy s into t
     
     // Print the number of distinct substrings.
     printf("%d\n", count);
