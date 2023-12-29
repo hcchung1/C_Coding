@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
+long long int pow_(long long int a, long long int b){
+    long long int result = 1;
+    while(b--) result *= a;
+    return result;
+}
+
 int main(){
 
     long long int n;
@@ -25,7 +31,7 @@ int main(){
         long long int* arr = (long long int*)malloc((a*b)*sizeof(long long int));
         for(long long int i=0; i<a; i++){
             for(long long int j=0; j<b; j++){
-                arr[i*b+j] = alpha[i]*pow(2, beta[j]);
+                arr[i*b+j] = alpha[i]*pow_(2, beta[j]);
             }
         }
 
