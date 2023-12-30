@@ -13,7 +13,7 @@ int ft[N * 2];
 void update(int i, int n) {
 	while (i < n) {
 		ft[i]++;
-		i |= i + 1;
+		i |= i + 1; // i = 1, 3, 7, ..., 2^k - 1
 	}
 }
  
